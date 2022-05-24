@@ -22,7 +22,7 @@ func GetIBMPOWERVSBlockCSIOperatorConfig() CSIOperatorConfig {
 	return CSIOperatorConfig{
 		CSIDriverName:   IBMPOWERVSBlockCSIDriverName,
 		ConditionPrefix: "IBMPOWERVSBlock",
-		Platform:        configv1.PowerVSPlatformType,
+		Platform:        configv1.NonePlatformType,
 		StaticAssets: []string{
 			"csidriveroperators/ibm-powervs-block/01_sa.yaml",
 			"csidriveroperators/ibm-powervs-block/02_role.yaml",
