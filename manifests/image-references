@@ -149,9 +149,9 @@ spec:
   - name: ibm-powervs-block-csi-driver-operator
     from:
       kind: DockerImage
-      name: quay.io/mchellam/ibm-powervs-block-csi-driver-operator:latest
+      name: quay.io/openshift/origin-ibm-powervs-block-csi-driver-operator:latest
   - name: ibm-powervs-block-csi-driver
     from:
       kind: DockerImage
-      name: k8s.gcr.io/cloud-provider-ibm/ibm-powervs-block-csi-driver:v0.1.1
+      name: quay.io/openshift/origin-ibm-powervs-block-csi-driver:latest
 
