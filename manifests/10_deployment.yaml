@@ -128,9 +128,9 @@ spec:
           - name: IBM_VPC_NODE_LABEL_UPDATER_IMAGE
             value: quay.io/openshift/origin-ibm-vpc-node-label-updater:latest
           - name: POWERVS_BLOCK_CSI_DRIVER_OPERATOR_IMAGE
-            value: quay.io/openshift/origin-ibm-powervs-block-csi-driver-operator:latest
+            value: quay.io/openshift/origin-powervs-block-csi-driver-operator:latest
           - name: POWERVS_BLOCK_CSI_DRIVER_IMAGE
-            value: quay.io/openshift/origin-ibm-powervs-block-csi-driver:latest
+            value: quay.io/openshift/origin-powervs-block-csi-driver:latest
           resources:
             requests:
               cpu: 10m
