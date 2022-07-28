@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: ibm-powervs-block-csi-driver-operator-clusterrole
+  name: powervs-block-csi-driver-operator-clusterrole
 rules:
 - apiGroups:
   - security.openshift.io
@@ -36,7 +36,7 @@ rules:
   - ''
   resourceNames:
   - extension-apiserver-authentication
-  - ibm-powervs-block-csi-driver-operator-lock
+  - powervs-block-csi-driver-operator-lock
   resources:
   - configmaps
   verbs:

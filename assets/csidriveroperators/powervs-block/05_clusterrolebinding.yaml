@@ -1,12 +1,12 @@
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: ibm-powervs-block-csi-driver-operator-clusterrolebinding
+  name: powervs-block-csi-driver-operator-clusterrolebinding
 subjects:
   - kind: ServiceAccount
-    name: ibm-powervs-block-csi-driver-operator
+    name: powervs-block-csi-driver-operator
     namespace: openshift-cluster-csi-drivers
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: ibm-powervs-block-csi-driver-operator-clusterrole
+  name: powervs-block-csi-driver-operator-clusterrole

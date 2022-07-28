@@ -3,10 +3,11 @@ package operator
 import (
 	"context"
 	"fmt"
+	"time"
+
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/component-base/metrics"
 	"k8s.io/component-base/metrics/legacyregistry"
-	"time"
 
 	configv1 "github.com/openshift/api/config/v1"
 	operatorv1 "github.com/openshift/api/operator/v1"
@@ -169,6 +170,6 @@ func populateConfigs(clients *csoclients.Clients, recorder events.Recorder) []cs
 		csioperatorclient.GetSharedResourceCSIOperatorConfig(),
 		csioperatorclient.GetAlibabaDiskCSIOperatorConfig(),
 		csioperatorclient.GetIBMVPCBlockCSIOperatorConfig(),
-		csioperatorclient.GetIBMPOWERVSBlockCSIOperatorConfig(),
+		csioperatorclient.GetPOWERVSBlockCSIOperatorConfig(),
 	}
 }

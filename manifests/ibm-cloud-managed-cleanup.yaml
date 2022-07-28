@@ -46,7 +46,7 @@ metadata:
 apiVersion: cloudcredential.openshift.io/v1
 kind: CredentialsRequest
 metadata:
-   name: ibm-powervs-block-csi-driver-operator
+   name: powervs-block-csi-driver-operator
    namespace: openshift-cloud-credential-operator
    annotations:
     include.release.openshift.io/ibm-cloud-managed: "true"

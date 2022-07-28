@@ -146,12 +146,12 @@ spec:
     from:
       kind: DockerImage
       name: quay.io/openshift/origin-ibm-vpc-node-label-updater:latest
-  - name: ibm-powervs-block-csi-driver-operator
+  - name: powervs-block-csi-driver-operator
     from:
       kind: DockerImage
-      name: quay.io/openshift/origin-ibm-powervs-block-csi-driver-operator:latest
-  - name: ibm-powervs-block-csi-driver
+      name: quay.io/openshift/origin-powervs-block-csi-driver-operator:latest
+  - name: powervs-block-csi-driver
     from:
       kind: DockerImage
-      name: quay.io/openshift/origin-ibm-powervs-block-csi-driver:latest
+      name: quay.io/openshift/origin-powervs-block-csi-driver:latest
 

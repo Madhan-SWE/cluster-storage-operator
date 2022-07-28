@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ibm-powervs-block-csi-driver-operator
+  name: powervs-block-csi-driver-operator
   namespace: openshift-cluster-csi-drivers
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: ibm-powervs-block-csi-driver-operator
+      name: powervs-block-csi-driver-operator
   strategy: {}
   template:
     metadata:
       annotations:
         target.workload.openshift.io/management: '{"effect": "PreferredDuringScheduling"}'
       labels:
-        name: ibm-powervs-block-csi-driver-operator
+        name: powervs-block-csi-driver-operator
     spec:
       containers:
       - args:
@@ -41,13 +41,13 @@ spec:
               fieldPath: metadata.name
         image: ${OPERATOR_IMAGE}
         imagePullPolicy: IfNotPresent
-        name: ibm-powervs-block-csi-driver-operator
+        name: powervs-block-csi-driver-operator
         resources:
           requests:
             memory: 50Mi
             cpu: 10m
       priorityClassName: system-cluster-critical
-      serviceAccountName: ibm-powervs-block-csi-driver-operator
+      serviceAccountName: powervs-block-csi-driver-operator
       nodeSelector:
         node-role.kubernetes.io/master: ""
       tolerations:
